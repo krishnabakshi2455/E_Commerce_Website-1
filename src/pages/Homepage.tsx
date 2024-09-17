@@ -1,4 +1,4 @@
-
+import OwlCarousel from 'react-owl-carousel';
 
 const Homepage = () => {
   return (
@@ -11,13 +11,13 @@ const Homepage = () => {
               <small className="me-3">
                 <i className="fas fa-map-marker-alt me-2 text-secondary" />{" "}
                 <a href="#" className="text-white">
-                  123 Street, New York
+                  123 Street, New Delhi
                 </a>
               </small>
               <small className="me-3">
                 <i className="fas fa-envelope me-2 text-secondary" />
                 <a href="#" className="text-white">
-                  Email@Example.com
+                  krishnabakshi2455@gmail.com
                 </a>
               </small>
             </div>
@@ -1066,7 +1066,29 @@ const Homepage = () => {
       <div className="container-fluid vesitable py-5">
         <div className="container py-5">
           <h1 className="mb-0">Fresh Organic Vegetables</h1>
-          <div className="owl-carousel vegetable-carousel justify-content-center">
+          {/*owl*/}
+          <OwlCarousel
+            className="owl-carousel vegetable-carousel justify-content-center"
+            items={1} // Number of items to show
+            loop={true}
+            margin={10}
+            nav={true}
+            navText={[
+              "<i class='fa fa-chevron-left'></i>",
+              "<i class='fa fa-chevron-right'></i>"
+            ]}
+            responsive={{
+              0: {
+                items: 1
+              },
+              600: {
+                items: 2
+              },
+              1000: {
+                items: 3
+              }
+            }}
+            >
             <div className="border border-primary rounded position-relative vesitable-item">
               <div className="vesitable-img">
                 <img
@@ -1323,7 +1345,8 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          {/*owl */}
+          </OwlCarousel>
         </div>
       </div>
       {/* Vesitable Shop End */}
@@ -1744,7 +1767,8 @@ const Homepage = () => {
             <h4 className="text-primary">Our Testimonial</h4>
             <h1 className="display-5 mb-5 text-dark">Our Client Saying!</h1>
           </div>
-          <div className="owl-carousel testimonial-carousel">
+          {/*owl*/}
+          <OwlCarousel className="owl-carousel testimonial-carousel owl-theme" loop margin={10} nav >
             <div className="testimonial-item img-border-radius bg-light rounded p-4">
               <div className="position-relative">
                 <i
@@ -1850,7 +1874,8 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          {/*owl */}
+          </OwlCarousel>
         </div>
       </div>
       {/* Tastimonial End */}
