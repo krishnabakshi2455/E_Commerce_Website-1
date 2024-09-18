@@ -46,6 +46,7 @@ const Header = () => {
                           data-bs-toggle="collapse"
                           data-bs-target="#navbarCollapse"
                       >
+                        
                           <span className="fa fa-bars text-primary" />
                       </button>
                       <div className="collapse navbar-collapse bg-white" id="navbarCollapse">
@@ -74,9 +75,9 @@ const Header = () => {
                                       <NavLink to='/checkout' className="dropdown-item">
                                           Chackout
                                       </NavLink>
-                                      <a href="testimonial.html" className="dropdown-item">
+                                      <NavLink to="/testimonials" className="dropdown-item">
                                           Testimonial
-                                      </a>
+                                      </NavLink>
                                       <a href="404.html" className="dropdown-item">
                                           404 Page
                                       </a>

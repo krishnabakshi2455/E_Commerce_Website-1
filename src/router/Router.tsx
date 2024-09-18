@@ -6,6 +6,7 @@ import CheckOut from '../components/CheckOut'
 import ShopDetails from '../components/ShopDetails'
 import ThankYou from '../components/ThankYou'
 import Contact from '../components/Contact'
+import Testimonial from '../components/Testimonial'
 
 const Router = () => {
   return (
@@ -18,6 +19,7 @@ const Router = () => {
         <Route path="/shopdetails" element={<ShopDetails />} />
         <Route path="/thankyou" element={<ThankYou/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/testimonials" element={<Testimonial/>} />
     </Routes>
     </>
   )
